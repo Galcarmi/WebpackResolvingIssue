@@ -11,7 +11,7 @@ This package was created to reproduce a GitHub issue that I am having with webpa
 
 ## The Issue
 
-I am trying to resolve npm packages (that are not stored in a standard `node_modules` folder) entry point by webpack target, but without success. As you can see, all the relevant packages are installed in the `external_modules` directory, and each package is installed in a special path.
+I am trying to resolve npm packages (that are stored in a non-standard `node_modules` folder) entry point by webpack target, but without success. As you can see, all the relevant packages are installed in the `external_modules` directory, and each package is installed in a special path.
 
 Available packages:
 
