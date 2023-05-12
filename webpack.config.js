@@ -45,20 +45,11 @@ module.exports = {
   },
   target: 'webworker',
   resolve:{
-    extensions: ['.js', '.jsx', '.json', '.jsw', '.w.js'],
+    extensions: ['.js', '.jsx', '.json'],
     plugins: [new CustomResolverPlugin()],
   },
   devtool: false,
   optimization: {
     minimize: true,
-  },
-  module: {
-    rules: [
-      {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        use: ['babel-loader'],
-      },
-    ],
-  },
+  }
 };
