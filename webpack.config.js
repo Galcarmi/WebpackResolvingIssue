@@ -11,7 +11,6 @@ class CustomResolverPlugin {
     resolver
       .getHook("resolve")
       .tapAsync("NpmResolverPlugin", (resolveRequest, resolveContext, callback) => {
-        debugger
         const { request, pathAlreadyResolved } = resolveRequest;
 
         if (this._isAbsoluteOrRelativePath(request) || pathAlreadyResolved) {
